@@ -31,7 +31,8 @@ config.vm.synced_folder "[SPARTACUS_PATH]", "/tmp/spartacusStore",
 ```sh
 vagrant --initAll up --provision
 ```
-###(Note : all vagrant command line should be executed from the folder which contains source files)
+#### (Note : all vagrant command line should be executed from the folder which contains source files)
+
 6. Build & start Hybris  :
 ```sh
 #access to the box
