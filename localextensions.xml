@@ -136,8 +136,5 @@
     <extension name='permissionswebservices' />
     <extension name='webservicescommons' />
     <extension name='ywebservices' />
-	<extension name='hmc' />
-	<extension name='platformhmc' />
-	<extension name='cms2hmc' />
   </extensions>
 </hybrisconfig>
