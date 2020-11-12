@@ -6,33 +6,33 @@ Please follow the steps bellow to set up the box
 
 Prerequisite
 ==============
-SAP Commerce 2005 Zip
-Oracle VM VirtualBox
+- SAP Commerce 2005 Zip
+- Oracle VM VirtualBox
 
 Installation - Config
 ==============
-- Unzip SAP Commerce 2005 Zip
-- create a folder an name it as you want, note that folder will contain Sparatucs files
-- Mount SAP folder with Vagrant folder, to do that :
--- Open Vagrantfile
--- Replace the path : replace **[SAP_COMMERCE_PATH]** with your SAP Commerce 2005
+1. Unzip SAP Commerce 2005 Zip
+2. Create a folder an name it as you want, note that folder will contain Sparatucs files
+3. Mount SAP folder with Vagrant folder, to do that :
+- Open Vagrantfile
+- Replace **[SAP_COMMERCE_PATH]** with your 'SAP Commerce 2005' path
 ```sh
 config.vm.synced_folder "[SAP_COMMERCE_PATH]", "/tmp/hybris",
     id: "hybris"
 ```
-- Mount Spartacus folder with Vagrant folder, to do that :
--- Open Vagrantfile
--- Replace the path : replace **[SPARTACUS_PATH]** with your the path of the folder that you have created before
+4. Mount Spartacus folder with Vagrant folder, to do that :
+- Open Vagrantfile
+- Replace **[SPARTACUS_PATH]** with the path of the folder that you have created before ( step 2 )
 ```sh
 config.vm.synced_folder "[SPARTACUS_PATH]", "/tmp/spartacusStore",
     id: "spartacus"
 ```
-- Start the box :
+5. Start the box :
 ```sh
 vagrant --initAll up --provision
 ```
-(Note : all vagrant command line should be executed from the folder which contains source files)
-- Build & start Hybris  :
+###(Note : all vagrant command line should be executed from the folder which contains source files)
+6. Build & start Hybris  :
 ```sh
 #access to the box
 vagrant ssh
@@ -53,7 +53,7 @@ ant clean all
 #start Hybris
 ./hybrisserver.sh
 ```
-- Build & start Spartacus
+7. Build & start Spartacus
 ```sh
 #access to the box in a new shell ( keep that for hybris open )
 vagrant ssh
