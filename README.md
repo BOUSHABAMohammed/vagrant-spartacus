@@ -67,6 +67,12 @@ cd /tmp/spartacusStore
 #start Sparatcus
 sudo yarn start --host 0.0.0.0 --port 4200 
 ```
+8. Access to Spartacus
+
+```sh
+http://localhost:4200/electronics-spa/en/USD/
+```
+
 
 ### Notes
 - You can run hybris in debug mode, so you can debug from the host on port 8000, you just need to run the hybris server in debug mode :
