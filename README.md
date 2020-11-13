@@ -49,6 +49,8 @@ ant
 exit
 #reload the box to import medias & continue the installation
 vagrant --importMedias --setConfig reload --provision
+#access to the box
+vagrant ssh
 #set ant env
 cd /tmp/hybris/bin/platform
 . ./setantenv.sh
