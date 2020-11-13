@@ -31,7 +31,10 @@ config.vm.synced_folder "[SPARTACUS_PATH]", "/tmp/spartacusStore",
 ```sh
 vagrant --initAll up --provision
 ```
-#### (Note : all vagrant command line should be executed from the folder which contains source files)
+
+### Important : 
+- #### All vagrant commands line should be executed as admin if you are a Windows user 
+- #### all vagrant command line should be executed from the folder which contains source files
 
 6. Build & start Hybris  :
 ```sh
@@ -62,8 +65,6 @@ cd /tmp/spartacusStore
 #start Sparatcus
 sudo yarn start --host 0.0.0.0 --port 4200 
 ```
-### Important : 
-All vagrant commands line should be executed as admin if you are a Windows user 
 
 ### Notes
 - You can run hybris in debug mode, so you can debug from the host on port 8000, you just need to run the hybris server in debug mode :
